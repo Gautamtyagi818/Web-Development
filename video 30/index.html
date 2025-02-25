@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vriables</title>
+    <style>
+
+        :root{
+            --color: rgb(203, 203, 160);
+            --seccolor: rgb(254, 188, 118);
+            --defpadding: 20px;
+            --defopacity: 0.7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+            opacity: var(--defopacity);
+        }
+ 
+        ul{
+            list-style: none;
+            display: flex;
+
+        }
+
+        ul li {
+            padding: 12px;
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            --color: rgb(140, 182, 185);
+            background-color: var(--color, green);
+        }
+
+        .contanier {
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="contanier">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates qui eligendi assumenda porro alias voluptatem suscipit soluta eum tempora, corporis iusto pariatur, quibusdam nesciunt error velit modi! Voluptate atque, quas modi quos perspiciatis quod voluptatibus, facere, facilis fuga voluptas minus. Mollitia, nesciunt. Dolorum, officiis!</p>
+    </div>
+</body>
+</html>
