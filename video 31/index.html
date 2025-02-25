@@ -5,10 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <style>
-        
+        body {
+            background-color: blanchedalmond;
+        }
+
+        @media screen and (orientation: portrait){
+            body {
+                border: 2px solid rgb(23, 14, 204);
+            }
+        }
+
+        @media only screen and (max-width: 455px){
+            body {
+                background-color: rgb(212, 233, 25);
+            }
+            .boxes {
+                flex-direction: column; 
+            }
+        }
+          /* @media not|only mediatype and (expressions){
+            CSS Code
+        } */
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            padding: 10px;
+            margin: 10px;
+        }
     </style>
 </head>
-<body>
-    
+    <div>
+        i am a red body
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
 </html>
