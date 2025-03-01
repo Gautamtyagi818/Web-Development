@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Selecters</title>
     <style>
-        
+        /* .boxes:first-child {
+            background-color: aqua;
+        } */
+
+        /* .box:nth-last-child(2) {
+            background-color: rgb(233, 182, 115);
+        } */
+
+        /* .box::first-line{
+            color: blueviolet;
+        } */
+
+        /* .box:nth-child(even) {
+            background-color: aqua;
+        }  */
+
+        /* .box:nth-child(odd) {
+            background-color: yellow;
+        } */
+
+        /* .boxes *{
+            background-color: rgb(106, 106, 205);
+        } */
+
+        p, a, .box, [data-color="secondary"] {
+            background-color: rgb(145, 232, 145);
+        }
+
+        .boxes::before {
+            content: "my name is hello";
+            color: red;
+        }
+
+        .boxes::after {
+            content: "thaks! for watching";
+            color: rgb(117, 237, 255);
+        }
+
+        ::selection {
+            background-color: red;
+            color: white;
+        }
+
+        .box::first-letter {
+            color: rgba(108, 16, 213, 0.751);
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(21, 0, 254);
+        }
     </style>
 </head>
+
 <body>
-    
+    <div class="boxes">
+        <div class="box">Hey my name is arush Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ratione!
+            Unde cumque velit iusto doloremque nobis, at dolore reiciendis quisquam dicta voluptatum quo modi in qui
+            dolor, rerum ratione cum impedit illo? Deserunt molestias, corrupti quia doloremque sint sunt laudantium
+            impedit laboriosam recusandae explicabo maiores, deleniti rem veritatis ipsum beatae expedita aspernatur
+            ratione quidem quod ullam voluptatibus cumque quae labore minus? Molestias laborum aspernatur perferendis
+            earum omnis excepturi quisquam eos fugit recusandae, dolorem alias molestiae tempora necessitatibus tempore
+            quo exercitationem, y my name is arushnulla optio, ducimus neque? Nulla, mollitia. Id, beatae molestias quo
+            quod ipsam eum quisquam optio reiciendis facilis natus expedita neque.</div>
+        <div data-color="secondary" class="box">hey my name is arush</div>
+        <div class="box">hey my name is arush</div>
+        <input type="text" placeholder="Type yr name ">
+    </div>    
+    </div>
 </body>
+
 </html>
