@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: pink;
+            height: 40px;
+            position: static;
+            padding-top: 20px;
+            position: sticky;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            padding: 30px;
+            color: black;
+        }
+
+        body {
+            background-color: rgb(37, 28, 28);
+            color: white;
+        }
+
+        .container {
+
+            background-color: green;
+            margin: 15px 20px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .box1 {
+            background-color: rgb(243, 194, 104);
+            height: 70vh;
+            width: 40%;
+            display: inline-block;
+            margin: 0px 20px;
+        }
+
+        .box2 {
+            background-color: rgb(125, 104, 243);
+            height: 70vh;
+            width: 40%;
+            display: inline-block;
+            margin: 0px 20px;
+        }
+
+        .text-box {
+            border: 2px solid white;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            color: rgb(238, 238, 238);
+            text-align: center;
+            margin: 3% 30vw;
+            padding: 20px;
+            border-radius: 13px;
+            font-size: 32px;
+        }
+
+        .orange-box {
+            height: 34px;
+            width: 34px;
+            background-color: rgb(226, 159, 34);
+            position: sticky;
+            right: 30px;
+            bottom: 32px;
+            border-radius: 60px;
+        }
+
+        footer {
+            background-color: bisque;
+            height: 50px;
+            color: black;
+            text-align: center;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Detail</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="text-box">Welcome to sigma web dev-course to </div>
+        <div class="orange-box"></div>
+    </main>
+    <footer>
+        Tyagi Foundation &copy;licence by Amazon
+    </footer>
+</body>
+
+</html>
