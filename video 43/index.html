@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav using flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img{
+            width: 200px;
+            margin-top: 3px;
+            mix-blend-mode: multiply;        /* for  background remove */
+        }
+
+        nav {
+            background-color: rgb(245, 225, 199);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px;
+        }
+
+        .items ul {
+            display: flex;
+            gap: 20px;
+        }
+        .items ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .items ul li span {
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="image.png" alt="logo">
+            </div>
+            <div class="items">
+                <ul>                   
+                    <li><span>products</span><img width="20" src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-standard.svg" alt=""></li>
+                    <li><span>Resources</span><img width="20" src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-standard.svg" alt=""></li>
+                    <li><span>Support</span><img width="20" src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-standard.svg" alt=""></li>
+                    <li><span>About Us</span><img width="20" src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-standard.svg" alt=""></li>
+                    <li>
+                        <img width="25px" src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="image">
+                    </li>
+                    <li>
+                        <img width="18px" src="https://cdn.hugeicons.com/icons/search-01-stroke-rounded.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
